@@ -1,0 +1,19 @@
+package part01_general.sub03_simplify_boolean_expressions;
+
+// 1.4 boolean 표현식 간소화
+
+public class SpaceShip {
+	Crew crew; // 승무원
+	FuelTank fuelTank; // 연료 저장소
+	Hull hull;	// 배의 선체
+	Navigator navigator; // 네비게이션
+	OxygenTank oxygenTank;
+	
+	boolean willCrewSurvive() {
+		return hull.holes == 0 &&
+				fuelTank.fuel >= navigator.requiredFuelToEarth() &&
+				oxygenTank.lastsFor(crew.size)> navigator.timeToEarth(); 
+	}
+}
+
+
