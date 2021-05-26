@@ -2,7 +2,7 @@ package part01_general.sub01_avoid_useless_comparisons;
 
 import part01_general.*;
 
-// 1.1 ¾µ¸ğ¾ø´Â ºñ±³ ÇÇÇÏ±â
+// 1.1 ì“¸ëª¨ì—†ëŠ” ë¹„êµ í”¼í•˜ê¸°
 
 /*
 public class Laboratory {
@@ -26,11 +26,11 @@ public class Laboratory {
 }
 */
 
-//boolean ¹İÈ¯ °ª°ú boolean ¸®ÅÍ·² Å¸ÀÔÀ» 
-//¸í½ÃÀûÀ¸·Î ºñ±³ÇÏ´Â ¾ÈÆ¼ ÆĞÅÏ(anti-pattern)
-//boolean ¾Æ´Ñ ´Ù¸¥ µ¥ÀÌÅÍ Å¸ÀÔÀÎ °æ¿ì¿¡´Â
-//½ÇÁ¦ °ª°ú ºñ±³ÇØ¾ßÇÏÁö¸¸ boolean º¯¼ö³ª ¹İÈ¯ Å¸ÀÔÀº
-//±×·² ÇÊ¿ä°¡ ¾ø´Ù.
+//boolean ë°˜í™˜ ê°’ê³¼ boolean ë¦¬í„°ëŸ´ íƒ€ì…ì„ 
+//ëª…ì‹œì ìœ¼ë¡œ ë¹„êµí•˜ëŠ” ì•ˆí‹° íŒ¨í„´(anti-pattern)
+//boolean ì•„ë‹Œ ë‹¤ë¥¸ ë°ì´í„° íƒ€ì…ì¸ ê²½ìš°ì—ëŠ”
+//ì‹¤ì œ ê°’ê³¼ ë¹„êµí•´ì•¼í•˜ì§€ë§Œ boolean ë³€ìˆ˜ë‚˜ ë°˜í™˜ íƒ€ì…ì€
+//ê·¸ëŸ´ í•„ìš”ê°€ ì—†ë‹¤.
 
 // solution
 public class Laboratory {

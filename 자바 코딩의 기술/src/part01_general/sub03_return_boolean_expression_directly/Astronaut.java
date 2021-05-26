@@ -1,14 +1,14 @@
 package part01_general.sub03_return_boolean_expression_directly;
 
-// 1.3 boolean Ç¥Çö½ÄÀ» Á÷Á¢ ¹İÈ¯
+// 1.3 boolean í‘œí˜„ì‹ì„ ì§ì ‘ ë°˜í™˜
 
-// ¿ìÁÖ ºñÇà»ç
+// ìš°ì£¼ ë¹„í–‰ì‚¬
 /*
 public class Astronaut {
 	String name;
-	int missions; // È­¼º Å½»ç ¹Ì¼Ç ¼ö
+	int missions; // í™”ì„± íƒì‚¬ ë¯¸ì…˜ ìˆ˜
 	
-	// À¯È¿¼º °Ë»ç
+	// ìœ íš¨ì„± ê²€ì‚¬
 	boolean isValid() {
 		if(missions < 0 || name == null || name.trim().isEmpty()) {
 			return false;
@@ -20,17 +20,17 @@ public class Astronaut {
 }
 */
 
-// name : null ÀÌ¸é ¾ÈµÇ¸ç ºó ¹®ÀÚ¿­ÀÌ¿©¼­´Â ¾ÈµÈ´Ù.
-// missions : À½¼ö¿©¼­´Â ¾ÈµÈ´Ù.
-// ÄÚµå¿¡ ±â´É»ó ¿À·ù´Â ¾øÀ¸³ª, Á¶°Ç¹®ÀÇ Á¶°Ç½ÄÀÇ °á°ú °ª°ú
-// ¸Ş¼­µåÀÇ ¹İÈ¯ °ªÀÌ °°À¸¹Ç·Î »ç½Ç»ó if ¹®ÀÌ ¾µµ¥¾ø´Ù.
+// name : null ì´ë©´ ì•ˆë˜ë©° ë¹ˆ ë¬¸ìì—´ì´ì—¬ì„œëŠ” ì•ˆëœë‹¤.
+// missions : ìŒìˆ˜ì—¬ì„œëŠ” ì•ˆëœë‹¤.
+// ì½”ë“œì— ê¸°ëŠ¥ìƒ ì˜¤ë¥˜ëŠ” ì—†ìœ¼ë‚˜, ì¡°ê±´ë¬¸ì˜ ì¡°ê±´ì‹ì˜ ê²°ê³¼ ê°’ê³¼
+// ë©”ì„œë“œì˜ ë°˜í™˜ ê°’ì´ ê°™ìœ¼ë¯€ë¡œ ì‚¬ì‹¤ìƒ if ë¬¸ì´ ì“¸ë°ì—†ë‹¤.
 
 // solution
 public class Astronaut {
 	String name;
-	int missions; // È­¼º Å½»ç ¹Ì¼Ç ¼ö
+	int missions; // í™”ì„± íƒì‚¬ ë¯¸ì…˜ ìˆ˜
 	
-	// À¯È¿¼º °Ë»ç
+	// ìœ íš¨ì„± ê²€ì‚¬
 	boolean isValid() {
 		//if(missions < 0 || name == null || name.trim().isEmpty()) {
 		//	return false;
@@ -39,7 +39,7 @@ public class Astronaut {
 		//}
 		
 		// return missions >= 0 && name != null && !name.trim().isEmpty();
-		// À§ Ã³·³ Á¶°Ç¹®ÀÌ º¹ÀâÇÒ °æ¿ì ºĞÇÒÇÏ´Â ¹æ¹ıÀ» °í·ÁÇÒ ÇÊ¿ä°¡ ÀÖ´Ù.
+		// ìœ„ ì²˜ëŸ¼ ì¡°ê±´ë¬¸ì´ ë³µì¡í•  ê²½ìš° ë¶„í• í•˜ëŠ” ë°©ë²•ì„ ê³ ë ¤í•  í•„ìš”ê°€ ìˆë‹¤.
 		
 		boolean isValidMissions = missions >= 0;
 		boolean isValidName = name != null && !name.trim().isEmpty();

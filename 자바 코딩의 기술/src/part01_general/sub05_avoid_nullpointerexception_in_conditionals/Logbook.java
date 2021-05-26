@@ -8,7 +8,7 @@ import java.nio.file.StandardOpenOption;
 import java.time.LocalDate;
 import java.util.Collections;
 
-// 1.5 Á¶°Ç¹®¿¡¼­ NullPointerException ÇÇÇÏ±â
+// 1.5 ì¡°ê±´ë¬¸ì—ì„œ NullPointerException í”¼í•˜ê¸°
 
 //public class Logbook {
 //	void writeMessage(String message, Path location) throws IOException {
@@ -25,14 +25,14 @@ import java.util.Collections;
 //	}
 //}
 
-// line.15 : null °Ë»ç°¡ ¾øÀ¸¸ç, ¿¹¿Ü ¹ß»ı ½Ã º°´Ù¸¥ ¼³¸íÀÌ ¾øÀ½.
-// line.18 : message ÀÇ null °Ë»çº¸´Ù ¸Ş¼­µå¸¦ ÅëÇÑ °ªÀ» ¸ÕÀú °Ë»çÇÔ.
-//		   : null ÀÎ °æ¿ì ¿¹¿Ü ¹ß»ı
+// line.15 : null ê²€ì‚¬ê°€ ì—†ìœ¼ë©°, ì˜ˆì™¸ ë°œìƒ ì‹œ ë³„ë‹¤ë¥¸ ì„¤ëª…ì´ ì—†ìŒ.
+// line.18 : message ì˜ null ê²€ì‚¬ë³´ë‹¤ ë©”ì„œë“œë¥¼ í†µí•œ ê°’ì„ ë¨¼ì € ê²€ì‚¬í•¨.
+//		   : null ì¸ ê²½ìš° ì˜ˆì™¸ ë°œìƒ
 
-// ÀÎ¼ö °Ë»çÇÒ ¶§´Â 
-//  1. null °Ë»ç
-//  2. ºó ¹®ÀÚ¿­ ¶Ç´Â ºó ¸®½ºÆ® °Ë»ç
-//  3. ±× ¿Ü Á¶°Ç °Ë»ç
+// ì¸ìˆ˜ ê²€ì‚¬í•  ë•ŒëŠ” 
+//  1. null ê²€ì‚¬
+//  2. ë¹ˆ ë¬¸ìì—´ ë˜ëŠ” ë¹ˆ ë¦¬ìŠ¤íŠ¸ ê²€ì‚¬
+//  3. ê·¸ ì™¸ ì¡°ê±´ ê²€ì‚¬
 public class Logbook {
 	void writeMessage(String message, Path location) throws IOException {
 		if(message==null || message.trim().equals("")) {

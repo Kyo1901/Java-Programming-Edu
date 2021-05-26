@@ -1,13 +1,13 @@
 package part01_general.sub04_simplify_boolean_expressions;
 
-// 1.4 boolean Ç¥Çö½Ä °£¼ÒÈ­
+// 1.4 boolean í‘œí˜„ì‹ ê°„ì†Œí™”
 //
 //public class SpaceShip {
-//	Crew crew; // ½Â¹«¿ø
-//	FuelTank fuelTank; // ¿¬·á ÀúÀå¼Ò
-//	Hull hull;	// ¹èÀÇ ¼±Ã¼
-//	Navigator navigator; // ³×ºñ°ÔÀÌ¼Ç
-//	OxygenTank oxygenTank; // »ê¼Ò ÀúÀå¼Ò
+//	Crew crew; // ìŠ¹ë¬´ì›
+//	FuelTank fuelTank; // ì—°ë£Œ ì €ìž¥ì†Œ
+//	Hull hull;	// ë°°ì˜ ì„ ì²´
+//	Navigator navigator; // ë„¤ë¹„ê²Œì´ì…˜
+//	OxygenTank oxygenTank; // ì‚°ì†Œ ì €ìž¥ì†Œ
 //	
 //	public boolean willCrewSurvive() {
 //		
@@ -17,29 +17,29 @@ package part01_general.sub04_simplify_boolean_expressions;
 //	}
 //}
 //
-// ´Ù¼öÀÇ Á¶°Ç¹®ÀÌ ÇÕÃÄÁø boolean Ç¥Çö½ÄÀº ÀÌÇØÇÏ±â ¾î·Æ°í Àß¸ø ÀÌÇØÇÏ±â ½±´Ù.
-// ¶ÇÇÑ, ±æÀÌ°¡ ±æ´Ùº¸´Ï ÀÏºÎ¸¦ º¯°æÇØ¾ß ÇÒ ¶§ ½Ç¼ö°¡ ¹ß»ýÇÒ ¼ö ÀÖ´Ù.
-//  ¡æ Ãß»óÈ­ Á¤µµ¿¡ µû¸¥ ±×·çÇÎÇÏ±â
+// ë‹¤ìˆ˜ì˜ ì¡°ê±´ë¬¸ì´ í•©ì³ì§„ boolean í‘œí˜„ì‹ì€ ì´í•´í•˜ê¸° ì–´ë µê³  ìž˜ëª» ì´í•´í•˜ê¸° ì‰½ë‹¤.
+// ë˜í•œ, ê¸¸ì´ê°€ ê¸¸ë‹¤ë³´ë‹ˆ ì¼ë¶€ë¥¼ ë³€ê²½í•´ì•¼ í•  ë•Œ ì‹¤ìˆ˜ê°€ ë°œìƒí•  ìˆ˜ ìžˆë‹¤.
+//  â†’ ì¶”ìƒí™” ì •ë„ì— ë”°ë¥¸ ê·¸ë£¨í•‘í•˜ê¸°
 
 public class SpaceShip {
-	Crew crew; // ½Â¹«¿ø
-	FuelTank fuelTank; // ¿¬·á ÀúÀå¼Ò
-	Hull hull;	// ¹èÀÇ ¼±Ã¼
-	Navigator navigator; // ³×ºñ°ÔÀÌ¼Ç
-	OxygenTank oxygenTank; // »ê¼Ò ÀúÀå¼Ò
+	Crew crew; // ìŠ¹ë¬´ì›
+	FuelTank fuelTank; // ì—°ë£Œ ì €ìž¥ì†Œ
+	Hull hull;	// ë°°ì˜ ì„ ì²´
+	Navigator navigator; // ë„¤ë¹„ê²Œì´ì…˜
+	OxygenTank oxygenTank; // ì‚°ì†Œ ì €ìž¥ì†Œ
 	
 	public boolean willCrewSurvive() {
-		// ÀÚ¿ø(¿¬·á + °ø±â)°¡ ÃæºÐÇÑ°¡		
+		// ìžì›(ì—°ë£Œ + ê³µê¸°)ê°€ ì¶©ë¶„í•œê°€		
 		boolean hasEnoughResource = hasEnoughFuel() && hasEnoughOxygen();
 		
 		return hull.isIntact() && hasEnoughResource;
 	}
 	
-	// ¿¬·á°¡ ÃæºÐÇÑ°¡
+	// ì—°ë£Œê°€ ì¶©ë¶„í•œê°€
 	private boolean hasEnoughFuel() {
 		return fuelTank.fuel >= navigator.requiredFuelToEarth();
 	}
-	// °ø±â°¡ ÃæºÐÇÑ°¡
+	// ê³µê¸°ê°€ ì¶©ë¶„í•œê°€
 	private boolean hasEnoughOxygen() {
 		return oxygenTank.lastsFor(crew.size)> navigator.timeToEarth(); 
 	}

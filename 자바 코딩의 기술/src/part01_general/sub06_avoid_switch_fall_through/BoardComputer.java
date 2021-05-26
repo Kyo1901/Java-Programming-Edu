@@ -5,7 +5,7 @@ import java.util.Objects;
 import part01_general.CruiseControl;
 import part01_general.User;
 
-// 1.6 switch ½ÇÆÐ ÇÇÇÏ±â
+// 1.6 switch ì‹¤íŒ¨ í”¼í•˜ê¸°
 
 public class BoardComputer {
 	CruiseControl cruiseControl;

@@ -2,7 +2,7 @@ package part01_general.sub02_avoid_negation;
 
 import part01_general.*;
 
-// 1.2 ºÎÁ¤ ÇÇÇÏ±â
+// 1.2 ë¶€ì • í”¼í•˜ê¸°
 
 /*
 public class Laboratory {
@@ -26,7 +26,7 @@ public class Laboratory {
 }
 */
 
-// ÄÚµå¸¦ ÀĞÀ» ¶§ ÀÏ¹İÀûÀ¸·Î ±àÁ¤ Ç¥ÇöÀ» ÀÌÇØÇÏ±â°¡ ´õ ½±´Ù.
+// ì½”ë“œë¥¼ ì½ì„ ë•Œ ì¼ë°˜ì ìœ¼ë¡œ ê¸ì • í‘œí˜„ì„ ì´í•´í•˜ê¸°ê°€ ë” ì‰½ë‹¤.
 
 // solution
 public class Laboratory {
