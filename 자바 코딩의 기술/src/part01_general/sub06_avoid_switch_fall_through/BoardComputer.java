@@ -5,6 +5,8 @@ import java.util.Objects;
 import part01_general.CruiseControl;
 import part01_general.User;
 
+// 1.6 switch 실패 피하기
+
 public class BoardComputer {
 	CruiseControl cruiseControl;
 	
