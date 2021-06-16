@@ -35,7 +35,6 @@ public class BoardComputer {
 //     "거의 같은 것들은 똑같은 부분과 완전히 다른 부분으로 나눌 수 있다."
 //		- 켄트 백(Kent Beck) -
 
-
 // 권한을 부여하는 코드와 권한을 부여하지 않는 코드를 분리
 public class BoardComputer {
 	CruiseControl cruiseControl;

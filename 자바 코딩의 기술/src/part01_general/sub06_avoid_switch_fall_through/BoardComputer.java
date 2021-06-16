@@ -45,7 +45,6 @@ import part01_general.User;
 //  → 코드를 추가할 때 안정적으로 추가할 수 있다.
 public class BoardComputer {
 	CruiseControl cruiseControl;
-	
 	void authorize(User user) {
 		Objects.requireNonNull(user);
 		if(user.isUnknown()) {
@@ -56,7 +55,6 @@ public class BoardComputer {
 			cruiseControl.grantAccess(user);
 			cruiseControl.grantAdminAccess(user);
 		}
-		
 	}
 }
 
