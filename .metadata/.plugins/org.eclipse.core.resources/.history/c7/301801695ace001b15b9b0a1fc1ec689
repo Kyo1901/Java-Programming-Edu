@@ -1,0 +1,27 @@
+package part01_general.sub09_ensure_code_symmetry;
+
+import java.util.Objects;
+
+import part01_general.CruiseControl;
+import part01_general.User;
+
+// 1.9 코드 대칭 이루기
+//  조건 분기를 대칭적 방법으로 구조화하면
+//  코드를 쉽게 이해하고 파악할 수 있다.
+
+public class BoardComputer {
+	CruiseControl cruiseControl;
+	
+	void authorize(User user) {
+		Objects.requireNonNull(user);
+		if(user.isUnknown()) {
+			cruiseControl.logUnauthorizedAccessAttempt();
+		}else if(user.isAstronaut()) {
+			cruiseControl.grantAccess(user);
+		}else if(user.isCommander()) {
+			cruiseControl.grantAccess(user);
+			cruiseControl.grantAdminAccess(user);
+		}
+		
+	}
+}
